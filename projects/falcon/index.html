@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress CheckImageSize -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <script src="js/head.js?prefix="></script>
+    <meta name="description"
+          content="FALCON: Fast Visual Concept Learning by Integrating Images, Linguistic descriptions, and Conceptual Relations
+">
+    <meta name="keywords" content="MIT,Vision,NLP,Machine Learning,Computer Science">
+
+    <title>FALCON</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<div class="outercontainer">
+    <div class="container">
+
+        <div class="content project_title">
+            <h1>FALCON: Fast Visual Concept Learning by Integrating Images, Linguistic descriptions, and Conceptual Relations</h1>
+        </div>
+
+        <div class="content project_headline">
+            <div class="img">
+                <img class="img_responsive" src="images/teaser.png" alt="frames"/>
+            </div>
+            <div class="text">
+                <p>Figure 1: Three illustrative examples of our fast concept learning task. Our model learns from three naturally occurring data streams: (a) looking at images, reading sentences that describe the objects in the scene, and (b) interpreting supplemental sentences that relate the novel concept with other concepts. (c) The acquired novel concepts (e.g., red and white-eyed vireo transfer to downstream tasks, such as visual reasoning. We present a meta-learning framework to solve this task.</p>
+            </div>
+        </div>
+
+        <div class="content project_headline">
+            <div class="img">
+                <img class="img_responsive" src="images/model.png" alt="model"/>
+            </div>
+            <div class="text">
+                <p>Figure 2: Overview of FALCON-G. FALCON-G starts from extracting object-centric representations and parse input sentences into semantic programs. It executes the program to locate the objects being referred to. The example objects, together with the reconstructed concept graphs are fed into two GNNs sequentially to predict the concept embedding for the “white-eyed vireo”. The derived concept embedding can be used in downstream tasks such as visual reasoning.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <h3>Abstract</h3>
+                <p>We present a meta-learning framework for learning new visual concepts quickly, from just one or a few examples, guided by multiple naturally occurring data streams: simultaneously looking at images, reading sentences that describe the objects in the scene, and interpreting supplemental sentences that relate the novel concept with other concepts. The learned concepts support downstream applica- tions, such as answering questions by reasoning about unseen images. Our model, namely FALCON, represents individual visual concepts, such as colors and shapes, as axis-aligned boxes in a high-dimensional space (the “box embedding space”). Given an input image and its paired sentence, our model first resolves the referential expression in the sentence and associate the novel concept with particular objects in the scene. Next, our model interprets supplemental sentences to relate the novel concept with other known concepts, such as “X has property Y” or “X is a kind of Y”. Finally, it infers an optimal box embedding for the novel concept that jointly 1) maximizes the likelihood of the observed instances in the image, and 2) satisfies the relationships between the novel concepts and the known ones. We demonstrate the effectiveness of our model on both synthetic and real-world datasets.</p>
+            </div>
+        </div>
+        <br>
+        <div class="content">
+            <br>
+            <div class="project_headline">
+                <iframe width="720" height="420" src="" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                <p>If you cannot access YouTube, please <a href="">download our video here</a> (1080p).
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="content">
+            <div class="text">
+                <h3>Publication</h3>
+                <ul>
+                    <li>
+                        <div class="title"><a name="falcon">FALCON: Fast Visual Concept Learning by Integrating Images, Linguistic descriptions, and Conceptual Relations
+</a></div>
+                        <div class="authors">
+
+                            <a href="https://people.csail.mit.edu/jerrymei/">Lingjie Mei</a>,
+                            <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
+                            <a href="https://wzq016.github.io/">Ziqi Wang</a>,
+                            <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>,
+                            <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
+                        </div>
+                        <div>
+                            <span class="venue"><a href="https://iclr.cc/">ICLR 2022</a></span>
+                            <span class="tag"><a href="https://openreview.net/pdf?id=htWIlvDcY8">Paper</a></span>
+                            <span class="tag"><a href="">Video</a></span>
+                            <span class="tag"><a href="https://github.com/JerryLingjieMei/FALCON-Release">Github Repo</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+    </div>
+</div>
+</body>
+</html>
