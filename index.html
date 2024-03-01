@@ -80,8 +80,10 @@
         <div id="main-more-container">
             <div id="main-bio-container">
                 <p>
-                    I am an incoming PhD student at <a href="https://www.princeton.edu/">Princeton</a>, majoring in <a
-                        href="https://www.cs.princeton.edu/">Computer Science</a>. I did my B.Sc. and M. Eng. at MIT,
+                    I am an PhD student at <a href="https://www.princeton.edu/">Princeton</a>, majoring in <a
+                        href="https://www.cs.princeton.edu/">Computer Science</a>. I am currently doing research with
+                    Professor <a href="https://www.cs.princeton.edu/~jiadeng/"> Jia Deng</a>
+                    I did my B.Sc. and M. Eng. at MIT,
                     working with Professors <a href="http://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a> and <a
                         href="https://jiajunwu.com/">Jiajun Wu</a>. Here is my <a href="assets/CV.pdf">CV</a>.
                 </p>
@@ -108,6 +110,8 @@
                     )
                 </h5>
                 <p class="subtitle-aux"><span class="bold">Topics:</span>
+                    <a href="#topic-vision-graphics" onClick="return publicationByTopicSpecific(this)"
+                       data-topic="topic-vision-graphics">Vision &amp; Graphics</a>.
                     <a href="#topic-scene-understanding" onClick="return publicationByTopicSpecific(this)"
                        data-topic="scene-understanding">Scene Understanding</a>.
                     <a href="#topic-concept-learning" onClick="return publicationByTopicSpecific(this)"
@@ -116,6 +120,139 @@
                 </p>
 
                 <div id="main-pub-card-container" class="hide">
+
+
+                    <div id="infinigen-indoors" class="pub-card" data-topic="vision-graphics" data-year="2024"
+                         data-selected="true">
+                        <div class="row">
+                            <div class="col-l col-xs-12 col-lg-3">
+                                <img src="imgs/infinigen_indoors.png" width="100%"/>
+                            </div>
+                            <div class="col-r col-xs-12 col-lg-9">
+                                <div class="pub-card-body">
+                                    <h5 class="title">Infinigen Indoors: Photorealistic Indoor Scenes using Procedural
+                                        Generation</h5>
+                                    <h6 class="authors">
+                                        Alexander Raistrick*, <u>Lingjie Mei* </u>, Karhan Kaan Kayan*, David Yan,
+                                        Yiming Zuo, Beining Han, Hongyu Wen, Meenal Parakh, Stamatis Alexandropoulos,
+                                        Lahav Lipson, Zeyu Ma, Jia Deng
+                                    </h6>
+                                    <p class="info">
+                                        <a class="conference">CVPR 2024</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="infinigen" class="pub-card" data-topic="vision-graphics" data-year="2023"
+                         data-selected="false">
+                        <div class="row">
+                            <div class="col-l col-xs-12 col-lg-3">
+                                <img src="imgs/infinigen.png" width="100%"/>
+                            </div>
+                            <div class="col-r col-xs-12 col-lg-9">
+                                <div class="pub-card-body">
+                                    <h5 class="title">Infinite Photorealistic Worlds using Procedural Generation</h5>
+                                    <h6 class="authors">
+                                        Alexander Raistrick, Lahav Lipson, Zeyu Ma,
+                                        <u>Lingjie Mei</u>, Mingzhe Wang, Yiming Zuo, Karhan Kayan, Hongyu Wen, Beining
+                                        Han,
+                                        Yihan Wang,Alejandro Newell, Hei Law, Ankit Goyal, Kaiyu Yang, Jia Deng
+                                    </h6>
+                                    <p class="info">
+                                        <a class="conference">CVPR 2023</a>
+                                        <a href="https://arxiv.org/pdf/2306.09310.pdf"> Paper</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="viol" class="pub-card" data-topic="scene-understanding" data-year="2023"
+                         data-selected="false">
+                        <div class="row">
+                            <div class="col-l col-xs-12 col-lg-3">
+                                <img src="imgs/viol.png" width="100%"/>
+                            </div>
+                            <div class="col-r col-xs-12 col-lg-9">
+                                <div class="pub-card-body">
+                                    <h5 class="title">Violations of physical and psychological expectations in the human
+                                        adult
+                                        brain</h5>
+                                    <h6 class="authors">
+                                        Shari Liu, Kirsten Lydic, <u>Lingjie Mei</u>, Rebecca Saxe
+                                    </h6>
+                                    <p class="info">
+                                        <a class="conference">CogSci
+                                            2023</a>. <a class="conference">Imaging Neuroscience
+                                        2024</a>.
+                                        <a href="https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00068/118940">
+                                            Paper</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="falcon" class="pub-card" data-topic="concept-learning" data-year="2022"
+                         data-selected="true">
+                        <div class="row">
+                            <div class="col-l col-xs-12 col-lg-3">
+                                <img src="imgs/falcon.png" width="100%"/>
+                            </div>
+                            <div class="col-r col-xs-12 col-lg-9">
+
+                                <div class="pub-card-body">
+                                    <h5 class="title">FALCON: Fast Visual Concept Learning by Integrating Images,
+                                        Linguistic descriptions, and Conceptual Relations</h5>
+                                    <h6 class="authors">
+                                        <u> Lingjie Mei</u>,
+                                        <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
+                                        <a href="https://wzq016.github.io/">Ziqi Wang</a>,
+                                        <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>,
+                                        <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
+                                    </h6>
+                                    <p class="info">
+                                        <a href="https://iclr.cc/" class="conference">ICLR 2022</a>.
+                                        <a href="https://openreview.net/pdf?id=htWIlvDcY8"> Paper</a>.
+                                        <a href="projects/falcon">Project</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fine" class="pub-card" data-topic="scene-understanding" data-year="2020"
+                         data-selected="false">
+                        <div class="row">
+                            <div class="col-l col-xs-12 col-lg-3">
+                                <img src="imgs/fine.png" width="100%"/>
+                            </div>
+                            <div class="col-r col-xs-12 col-lg-9">
+
+                                <div class="pub-card-body">
+                                    <h5 class="title">The fine structure of surprise in intuitive physics: when,
+                                        why,
+                                        and
+                                        how much?</h5>
+                                    <h6 class="authors">
+                                        <a href="http://www.mit.edu/~k2smith/">Kevin Smith</a>*,
+                                        <u>Lingjie Mei</u>*,
+                                        <a href="">Shunyu Yao</a>*,
+                                        <a href="http://jiajunwu.com">Jiajun Wu</a>,
+                                        <a href="https://psychology.fas.harvard.edu/people/elizabeth-s-spelke">Elizabeth
+                                            S.
+                                            Spelke</a>,
+                                        <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
+                                        <a href="http://www.mit.edu/~tomeru/">Tomer Ullman</a>
+                                    </h6>
+                                    <p class="info">
+                                        <a href="https://nips.cc/Conferences/2019" class="conference">CogSci
+                                            2020</a>.
+                                        <a href="http://physadept.csail.mit.edu/papers/fine.pdf"> Paper</a>.
+                                        <a href="http://physadept.csail.mit.edu/">Project</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="adept" class="pub-card" data-topic="scene-understanding" data-year="2019"
                          data-selected="true">
                         <div class="row">
@@ -149,67 +286,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="fine" class="pub-card" data-topic="scene-understanding" data-year="2020"
-                         data-selected="true">
-                        <div class="row">
-                            <div class="col-l col-xs-12 col-lg-3">
-                                <img src="imgs/fine.png" width="100%"/>
-                            </div>
-                            <div class="col-r col-xs-12 col-lg-9">
 
-                                <div class="pub-card-body">
-                                    <h5 class="title">The fine structure of surprise in intuitive physics: when,
-                                        why,
-                                        and
-                                        how much?</h5>
-                                    <h6 class="authors">
-                                        <a href="http://www.mit.edu/~k2smith/">Kevin Smith</a>*,
-                                        <u>Lingjie Mei</u>*,
-                                        <a href="">Shunyu Yao</a>*,
-                                        <a href="http://jiajunwu.com">Jiajun Wu</a>,
-                                        <a href="https://psychology.fas.harvard.edu/people/elizabeth-s-spelke">Elizabeth
-                                            S.
-                                            Spelke</a>,
-                                        <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
-                                        <a href="http://www.mit.edu/~tomeru/">Tomer Ullman</a>
-                                    </h6>
-                                    <p class="info">
-                                        <a href="https://nips.cc/Conferences/2019" class="conference">CogSci
-                                            2020</a>.
-                                        <a href="http://physadept.csail.mit.edu/papers/fine.pdf"> Paper</a>.
-                                        <a href="http://physadept.csail.mit.edu/">Project</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="falcon" class="pub-card" data-topic="concept-learning" data-year="2020"
-                         data-selected="true">
-                        <div class="row">
-                            <div class="col-l col-xs-12 col-lg-3">
-                                <img src="projects/falcon/images/thumbnail.gif" width="100%"/>
-                            </div>
-                            <div class="col-r col-xs-12 col-lg-9">
 
-                                <div class="pub-card-body">
-                                    <h5 class="title">FALCON: Fast Visual Concept Learning by Integrating Images,
-                                        Linguistic descriptions, and Conceptual Relations</h5>
-                                    <h6 class="authors">
-                                        <a href="https://people.csail.mit.edu/jerrymei/">Lingjie Mei</a>,
-                                        <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
-                                        <a href="https://wzq016.github.io/">Ziqi Wang</a>,
-                                        <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>,
-                                        <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
-                                    </h6>
-                                    <p class="info">
-                                        <a href="https://iclr.cc/" class="conference">ICLR 2022</a>.
-                                        <a href="https://openreview.net/pdf?id=htWIlvDcY8"> Paper</a>.
-                                        <a href="projects/falcon">Project</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -217,10 +295,8 @@
     <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="stat">
-                    <script type="text/javascript" id="clstr_globe"
-                            src="//cdn.clustrmaps.com/globe.js?d=y6qLx3tCyFi2j8oQrfvIXOwb63Jm7EiZQdh9Vt6CNr0"></script>
-                </div>
+                <script type="text/javascript" id="clstr_globe"
+                        src="//clustrmaps.com/globe.js?d=2af0H9J-NJm9kYuKhtAwEqBSl7X7mJcnckny5_qeqe8"></script>
                 <br>
                 <div class="copyright">
                     &copy; 2019-2019<br/>

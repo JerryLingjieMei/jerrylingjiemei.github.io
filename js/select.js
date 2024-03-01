@@ -211,7 +211,7 @@ $(function() {
         allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
     }
 
-    $("#publication-by-selected").click();
-    // $("#publication-by-date").click();
+    // $("#publication-by-selected").click();
+    $("#publication-by-date").click();
     $("#main-pub-card-container").removeClass("hide");
 });
