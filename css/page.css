@@ -221,6 +221,23 @@ a:hover {
     cursor: initial
 }
 
+#main-project-container {
+    margin: auto;
+    padding: 0 0em;
+    max-width: 1080px;
+    text-align: left;
+    padding-top: 30px;
+    max-width: 1080px
+}
+
+#main-project-container .subtitle {
+    color: #5a301b;
+}
+
+#main-project-container .subtitle-aux {
+    font-size: 1rem
+}
+
 #main-pub-card-container {
 }
 
