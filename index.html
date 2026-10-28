@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Jerry Lingjie Mei.">
+    <meta name="description" content="Jerry Lingjie Mei, Ph.D. candidate at Princeton University. Research in procedural 3D generation, synthetic data, computer vision, and physical reasoning.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <meta name="keywords"
           content="Jerry Lingjie Mei,Computer Vision,Machine Learning,Cognitive Science">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="assets/favico.ico">
+    <link rel="shortcut icon" href="assets/favicon.ico">
 
     <!--[if lt IE 9]>
     <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -80,16 +80,29 @@
         <div id="main-more-container">
             <div id="main-bio-container">
                 <p>
-                    I am an PhD student at <a href="https://www.princeton.edu/">Princeton</a> in <a
-                        href="https://www.cs.princeton.edu/">Computer Science</a>. I am currently doing research with
-                    Professor <a href="https://www.cs.princeton.edu/~jiadeng/"> Jia Deng</a>.
-                    I did my B.Sc. and M. Eng. at MIT,
-                    working with Professors <a href="http://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a> and <a
-                        href="https://jiajunwu.com/">Jiajun Wu</a>. Here is my <a href="cv/main.pdf">CV</a>.
+                    I am a Ph.D. candidate in <a href="https://www.cs.princeton.edu/">Computer Science</a>
+                    at <a href="https://www.princeton.edu/">Princeton University</a>, advised by
+                    Professor <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>.
+                    I received my M.Eng. in Computer Science and B.Sc. in Computer Science and Mathematics
+                    from MIT, where I worked with Professors
+                    <a href="https://web.mit.edu/cocosci/josh.html">Joshua Tenenbaum</a> and
+                    <a href="https://jiajunwu.com/">Jiajun Wu</a>.
+                    Here is my <a href="cv/main.pdf">CV</a>.
                 </p>
-                <h5 class="subtitle"> Research Interest </h5>
+                <h5 class="subtitle">Research Interests</h5>
                 <p>
-                    I am working 3D synthetic datasets, and how it can help build better vision and robotics models.
+                    I study procedural 3D generation and synthetic data for computer vision and robotics.
+                    My work spans compositional graphics tools, photorealistic scene generation,
+                    and controlled evaluation of visual perception. Recent projects include
+                    <a href="#procfunc">ProcFunc</a>, <a href="#infinigen-indoors">Infinigen Indoors</a>,
+                    and <a href="#pde">procedural depth evaluation</a>.
+                    My earlier research explored visual concept learning and intuitive physical reasoning
+                    through <a href="#falcon">FALCON</a> and <a href="#adept">ADEPT</a>.
+                </p>
+                <h5 class="subtitle">Teaching &amp; Service</h5>
+                <p>
+                    Teaching assistant and preceptor for MIT 6.036 and Princeton COS 324 and COS 423.
+                    Reviewer for NeurIPS 2024 and 2025, ECCV 2024, ICCV 2025, and CVPR 2026.
                 </p>
             </div>
 
@@ -107,7 +120,7 @@
                 </h5>
                 <p class="subtitle-aux"><span class="bold">Topics:</span>
                     <a href="#topic-vision-graphics" onClick="return publicationByTopicSpecific(this)"
-                       data-topic="topic-vision-graphics">Vision &amp; Graphics</a>.
+                       data-topic="vision-graphics">Vision &amp; Graphics</a>.
                     <a href="#topic-scene-understanding" onClick="return publicationByTopicSpecific(this)"
                        data-topic="scene-understanding">Scene Understanding</a>.
                     <a href="#topic-concept-learning" onClick="return publicationByTopicSpecific(this)"
@@ -116,6 +129,32 @@
                 </p>
 
                 <div id="main-pub-card-container" class="hide">
+
+                    <div id="procfunc" class="pub-card" data-topic="vision-graphics" data-year="2026"
+                         data-selected="false">
+                        <div class="row">
+                            <div class="col-l col-xs-12 col-lg-3">
+                                <img src="imgs/procfunc.jpg" width="100%" alt="Compositional procedural materials from ProcFunc"/>
+                            </div>
+                            <div class="col-r col-xs-12 col-lg-9">
+                                <div class="pub-card-body">
+                                    <h5 class="title">ProcFunc: Function-Oriented Abstractions for Procedural 3D Generation in Python</h5>
+                                    <h6 class="authors">
+                                        Alexander Raistrick, Karhan Kayan, Jack Nugent, David Yan, <u>Lingjie Mei</u>,
+                                        Meenal Parakh, Hongyu Wen, Dylan Li, Yiming Zuo, Erich Liang, Jia Deng
+                                    </h6>
+                                    <p class="info">
+                                        <a class="conference">arXiv 2026</a>
+                                        <a href="https://arxiv.org/abs/2604.26943">Paper</a>.
+                                        <a href="https://github.com/princeton-vl/procfunc">Code</a>.
+                                    </p>
+                                    <p>Composable Python functions for Blender-based geometry and materials,
+                                        with tools for procedural code analysis, editing, and diverse synthetic scene generation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
 
                     <div id="pde" class="pub-card" data-topic="vision-graphics" data-year="2025"
@@ -132,9 +171,10 @@
                                     </h6>
                                     <p class="info">
                                         <a class="conference">NeurIPS 2025</a>
-                                        <a href="https://arxiv.org/abs/2406.11824"> Paper</a>.
+                                        <a href="https://arxiv.org/abs/2507.00981"> Paper</a>.
                                         <a href="https://github.com/princeton-vl/proc-depth-eval"> Code</a>.
                                     </p>
+                                    <p>A controlled benchmark for testing monocular depth models under changes to objects, cameras, materials, and lighting.</p>
                                 </div>
                             </div>
                         </div>
@@ -156,10 +196,11 @@
                                     </h6>
                                     <p class="info">
                                         <a class="conference">CVPR 2024</a>
-                                        <a href="https://arxiv.org/abs/2406.11824.pdf"> Paper</a>.
+                                        <a href="https://arxiv.org/abs/2406.11824"> Paper</a>.
                                         <a href="https://infinigen.org/"> Website</a>.
                                         <a href="https://github.com/princeton-vl/infinigen"> Code</a>.
                                     </p>
+                                    <p>Procedural indoor assets and constraint-based scene arrangement, with export tools for embodied-agent simulators.</p>
                                 </div>
                             </div>
                         </div>
@@ -187,6 +228,7 @@
                                         <a href="https://youtu.be/6tgspeI-GHY"> Video</a>.
                                         <a href="https://www.bilibili.com/video/BV1qj411S7rn"> Video</a>.
                                     </p>
+                                    <p>A procedural system for generating diverse, photorealistic natural worlds and dense ground-truth annotations.</p>
                                 </div>
                             </div>
                         </div>
@@ -212,6 +254,7 @@
                                         <a href="https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00068/118940">
                                             Paper</a>.
                                     </p>
+                                    <p>A study of how the human brain responds to violations of physical and psychological expectations.</p>
                                 </div>
                             </div>
                         </div>
@@ -239,6 +282,7 @@
                                         <a href="https://openreview.net/pdf?id=htWIlvDcY8"> Paper</a>.
                                         <a href="projects/falcon">Project</a>.
                                     </p>
+                                    <p>A visual concept learner that combines images, language descriptions, and conceptual relationships to learn novel concepts.</p>
                                 </div>
                             </div>
                         </div>
@@ -268,11 +312,12 @@
                                         <a href="http://www.mit.edu/~tomeru/">Tomer Ullman</a>
                                     </h6>
                                     <p class="info">
-                                        <a href="https://nips.cc/Conferences/2019" class="conference">CogSci
+                                        <a href="https://escholarship.org/uc/item/07t8021w" class="conference">CogSci
                                             2020</a>.
                                         <a href="http://physadept.csail.mit.edu/papers/fine.pdf"> Paper</a>.
                                         <a href="http://physadept.csail.mit.edu/">Project</a>.
                                     </p>
+                                    <p>An analysis of when, why, and how strongly people are surprised by violations of intuitive physics.</p>
                                 </div>
                             </div>
                         </div>
@@ -306,6 +351,7 @@
                                         <a href="http://news.mit.edu/2019/adept-ai-machines-laws-physics-1202">MIT
                                             News</a>
                                     </p>
+                                    <p>An object-based model combining visual recognition, probabilistic simulation, and tracking to predict physical events.</p>
                                 </div>
                             </div>
                         </div>
@@ -319,8 +365,12 @@
                 <h5 class="subtitle">GitHub Projects</h5>
                 <p class="subtitle-aux"><span class="bold">Paper projects</span></p>
                 <p>
+                    <a href="https://github.com/princeton-vl/procfunc">princeton-vl/procfunc</a>:
+                    coauthor of the library for composing, analyzing, and editing procedural 3D generators in Python.
+                </p>
+                <p>
                     <a href="https://github.com/princeton-vl/infinigen">princeton-vl/infinigen</a>:
-                    core contributor to Princeton VL's flagship procedural scene generator (6.9k&nbsp;&#9733;).
+                    core contributor to Princeton VL's procedural scene generator for photorealistic synthetic data.
                 </p>
                 <p>
                     <a href="https://github.com/JerryLingjieMei/ADEPT-Model-Release">ADEPT-Model-Release</a>:
@@ -393,7 +443,7 @@
                 </div>
                 <br>
                 <div class="copyright">
-                    &copy; 2019-2019<br/>
+                    &copy; 2019–2026<br/>
                     Background picture retrieved from <a
                         href="https://www.wildtextures.com/">Wild Textures</a>.
                 </div>
@@ -411,6 +461,5 @@
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/select.js"></script>
-</div>
 </body>
 </html>
