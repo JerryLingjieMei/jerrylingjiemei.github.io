@@ -6,7 +6,8 @@ This repository owns Jerry Lingjie Mei's personal homepage.
 
 - GitHub Pages publishes `main` from the repository root at https://jerrylingjiemei.github.io/.
 - The homepage is also published on the Princeton CS website at https://www.cs.princeton.edu/~lm5483/.
-- `origin` and `pages` point to the same GitHub repository. One push updates both remote destinations.
+- "Sync" means both destinations: GitHub Pages and the Princeton CS HTML copy. A GitHub-only push is not a finished sync.
+- `origin` and `pages` point to the same GitHub repository, so one push reaches it.
 - The Princeton CS copy is an existing Git checkout at `/u/lm5483/public_html` (same directory as `/n/fs/grad/lm5483/public_html`), accessible through `ssh wash`. After pushing, run `git -C /u/lm5483/public_html pull --ff-only origin main` there. Preserve unrelated files, including `gpu-dashboard/`.
 - Verify both public sites after publishing. A successful GitHub Pages deployment does not prove the Princeton CS copy is current.
 

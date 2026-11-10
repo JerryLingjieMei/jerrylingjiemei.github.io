@@ -70,20 +70,24 @@ Skip a commit if its file group has no staged changes.
 
 If `--no-push` is not set:
 ```bash
-git push origin main
-git push pages main        # the GitHub Pages remote (see: git remote -v)
+git push origin main       # origin and pages are the same repository, so one push is enough
 ```
 
-The website deploys from the `pages` remote (`jerrylingjiemei.github.io.git`) — both remotes must be pushed for the change to go live.
+Then sync the Princeton CS HTML copy — the push alone does not update it:
+```bash
+ssh wash 'git -C /u/lm5483/public_html pull --ff-only origin main'
+```
+
+A sync covers both destinations: GitHub Pages and https://www.cs.princeton.edu/~lm5483/. Verify both after the pull.
 
 ### Step 7: Final report
 
 ```
 ✓ Gathered:  <N> pubs, <M> repos
 ✓ CV:        cv/main.pdf (<kb> KB) — pushed to Overleaf project "CV"
-✓ Website:   index.html updated — deployed to pages
+✓ Website:   index.html updated — GitHub Pages and Princeton CS copy synced
 ✓ LinkedIn:  .cache/linkedin_update.md ready, 3 edit tabs opened in Chrome
-✓ Git:       2 commits pushed to origin + pages
+✓ Git:       2 commits pushed to origin; Princeton checkout pulled to main
 ```
 
 ## Safety
