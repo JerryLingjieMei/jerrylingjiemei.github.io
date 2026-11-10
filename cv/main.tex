@@ -1,14 +1,27 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
 \usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
 \usepackage{hyperref}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!55!black,
+    urlcolor=blue!55!black,
+    pdfborder={0 0 0},
+    pdftitle={Jerry Lingjie Mei - Curriculum Vitae},
+    pdfauthor={Jerry Lingjie Mei}
+}
 
-\newcommand{\mysection}[1]{\noindent\textbf{\underline{#1}}}
-\newcommand{\mysubsection}[1]{\noindent\textbf{#1}}
+\newcommand{\mysection}[1]{\vspace{4pt}\noindent{\large\bfseries #1}\par\vspace{-2pt}\hrule\vspace{3pt}}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=1pt, parsep=0pt}
 
 \begin{document}
+\setlength{\parindent}{0pt}
 
 \begin{center}
     \thispagestyle{empty}
@@ -16,14 +29,14 @@
     \normalsize
     lm5483@princeton.edu $\mid$
     617-955-7874 $\mid$
-    \href{https://www.cs.princeton.edu/~lm5483/}{Website} $\mid$
-    \href{https://github.com/JerryLingjieMei/}{Github} $\mid$
+    \href{https://jerrylingjiemei.github.io/}{Website} $\mid$
+    \href{https://github.com/JerryLingjieMei/}{GitHub} $\mid$
     \href{https://scholar.google.com/citations?user=NBGAr-0AAAAJ&hl=en}{Google Scholar} \\
     \hrulefill
 \end{center}
 
 
-\mysection{EDUCATION} \\
+\mysection{EDUCATION}
 \textbf{Princeton University} \hfill Princeton, New Jersey \\
 \textit{Ph.D. candidate in Computer Science} \hfill GPA: 3.85/4.0 \hspace{1cm} Sept. 2022 - May 2027 \\
 \textbf{Massachusetts Institute of Technology} \hfill Cambridge, Massachusetts \\
@@ -41,10 +54,11 @@
 
 \mysection{RESEARCH INTEREST}
 
-Procedural Generation, 3D vision, Generative AI.
+Procedural world generation for embodied intelligence; 3D vision; generative models.
 
 
 \mysection{PUBLICATIONS}
+\textit{* Equal contribution.}
 \begin{itemize}
     \item Alexander Raistrick, Karhan Kayan, Jack Nugent, David Yan, \textbf{Lingjie Mei}, Meenal Parakh, Hongyu Wen, Dylan Li, Yiming Zuo, Erich Liang, and Jia Deng.
     \href{https://arxiv.org/abs/2604.26943}{ProcFunc: Function-Oriented Abstractions for Procedural 3D Generation in Python}.
@@ -70,11 +84,11 @@ Procedural Generation, 3D vision, Generative AI.
     \href{https://openreview.net/forum?id=htWIlvDcY8}{FALCON: Fast Visual Concept Learning by Integrating Images, Linguistic descriptions, and Conceptual Relations}.
     \textit{The Tenth International Conference on Learning Representations (ICLR)}, 2022.
 
-    \item Kevin Smith, \textbf{Lingjie Mei}, Shunyu Yao, Jiajun Wu, Elizabeth S. Spelke, Josh Tenenbaum, and Tomer D. Ullman.
+    \item Kevin Smith, \textbf{Lingjie Mei}, Shunyu Yao, Jiajun Wu, Elizabeth S. Spelke, Joshua B. Tenenbaum, and Tomer D. Ullman.
     \href{https://escholarship.org/uc/item/07t8021w}{The fine structure of surprise in intuitive physics: when, why, and how much?}
-    \textit{Proceedings of the 42th Annual Meeting of the Cognitive Science Society (CogSci)}, 2020.
+    \textit{Proceedings of the 42nd Annual Meeting of the Cognitive Science Society (CogSci)}, 2020.
 
-    \item Kevin Smith, \textbf{Lingjie Mei*}, Shunyu Yao, Jiajun Wu, Elizabeth S. Spelke, Josh Tenenbaum, and Tomer D. Ullman.
+    \item Kevin Smith, \textbf{Lingjie Mei*}, Shunyu Yao, Jiajun Wu, Elizabeth S. Spelke, Joshua B. Tenenbaum, and Tomer D. Ullman.
     \href{https://proceedings.neurips.cc/paper/2019/hash/e88f243bf341ded9b4ced444795c3f17-Abstract.html}{Modeling Expectation Violation in Intuitive Physics with Coarse Probabilistic Object Representations}.
     \textit{Advances in Neural Information Processing Systems (NeurIPS)}, 2019.
 \end{itemize}
@@ -84,16 +98,16 @@ Procedural Generation, 3D vision, Generative AI.
 % Extra-Curricular Activities, Leadership, etc.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\mysection{SERVICES}
+\mysection{SERVICE}
 \begin{itemize}[noitemsep, nolistsep, leftmargin=*]
-    \item Teaching Assistant/Preceptor for MIT 6.036, Princeton COS 324 and COS 423.
+    \item Teaching assistant and preceptor for MIT 6.036, Princeton COS 324, and COS 423.
     \item Reviewer for NeurIPS 2024, ECCV 2024, NeurIPS 2025, ICCV 2025, CVPR 2026.
 \end{itemize}
 
 
-\mysection{OTHER MISC PROJECTS}
-\mysubsection{Paper projects}
+\mysection{RESEARCH SOFTWARE}
 \begin{itemize}[noitemsep, nolistsep, leftmargin=*]
+    \item \href{https://github.com/princeton-vl/procfunc}{princeton-vl/procfunc}: coauthor of the library for composing, analyzing, and editing procedural 3D generators in Python.
     \item \href{https://github.com/princeton-vl/infinigen}{princeton-vl/infinigen}: core contributor to Princeton VL's procedural scene generator for photorealistic synthetic data.
     \item \href{https://github.com/JerryLingjieMei/ADEPT-Model-Release}{ADEPT-Model-Release}: model code for the ADEPT intuitive-physics project (NeurIPS 2019).
     \item \href{https://github.com/JerryLingjieMei/ADEPT-Dataset-Release}{ADEPT-Dataset-Release}: dataset generation code for ADEPT.
@@ -101,26 +115,14 @@ Procedural Generation, 3D vision, Generative AI.
     \item \href{https://github.com/princeton-vl/cvdpack}{princeton-vl/cvdpack}: contributor to tooling for reorganizing/compressing RGB/Depth/Flow/Normal frame datasets.
  \end{itemize}
 
-\mysubsection{Non-paper projects}
+\mysection{AWARDS AND ACTIVITIES}
 \begin{itemize}[noitemsep, nolistsep, leftmargin=*]
-    \item \href{https://github.com/blocher/dailyoffice2019}{blocher/dailyoffice2019}: contributor via pull requests to the Daily Office 2019 website codebase.
-    \item \href{https://github.com/JerryLingjieMei/WinogradConvolution}{WinogradConvolution}: Julia + CUDA implementation of Winograd convolution kernels.
-    \item \href{https://github.com/JerryLingjieMei/NonlinearPDE}{NonlinearPDE}: multigrid-based iterative solver for nonlinear PDEs.
-    \item \href{https://github.com/JerryLingjieMei/BayesianLanguageLearningPython}{BayesianLanguageLearningPython}: compositional language evolution from a Bayesian perspective.
-    \item \href{https://github.com/JerryLingjieMei/Contour3D}{Contour3D}: 3D contour reconstruction and visualization experiments.
-    \item \href{https://github.com/JerryLingjieMei/FastMultipleMethod}{FastMultipleMethod}: implementation of 1D fast multipole method.
-    \item \href{https://github.com/JerryLingjieMei/StarRailCopilot}{StarRailCopilot}: maintained fork for Honkai: Star Rail automation tooling.
-    \item \href{https://github.com/JerryLingjieMei/ece475-proj}{ece475-proj}: RISC-V 32I processor with vectorization support.
-    \item \href{https://github.com/JerryLingjieMei/Competitive_SIR}{Competitive\_SIR}: simulation of competing rumor dynamics with compartmental models.
-    \item \href{https://github.com/JerryLingjieMei/AtariRepresentation}{AtariRepresentation}: experiments on representation generalization in Atari games.
-\end{itemize}
-
-
-\mysection{ACTIVITIES}
-\begin{itemize}[noitemsep, nolistsep, leftmargin=*]
-    \item Prior to coming to MIT, I won the Gold Medal at the 2016 International Mathematical Olympiad (IMO).
-    \item During my years at MIT, I am involved with MIT ATS, MIT Asian dance team, MIT CUCN and MIT Technique. I was also top 25 individual at 2017 Putnam; and won the Boston Dragon Boat Race.
-    \item During my years at Princeton, I am involved with Princeton ECP. I was also a memeber of the IEEE-Eta Kappa Nu Honor Society.
+    \item Gold Medal, International Mathematical Olympiad (IMO), 2016.
+    \item Top 25 individual, William Lowell Putnam Mathematical Competition, 2017.
+    \item Boston Dragon Boat Race winner, 2017.
+    \item Member, IEEE-Eta Kappa Nu Honor Society.
+    \item MIT Association of Taiwanese Students, MIT Asian Dance Team, MIT CUCN, and MIT Technique.
+    \item Princeton ECP.
 \end{itemize}
 
 \end{document}
